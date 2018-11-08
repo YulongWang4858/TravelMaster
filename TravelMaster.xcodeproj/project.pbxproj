@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF8D4F491826367B4175EDAE /* libPods-TravelMaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CC20A46CFA0F1222E20F61 /* libPods-TravelMaster.a */; };
 		F779ABB8219408AD0048EF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABB7219408AD0048EF28 /* AppDelegate.swift */; };
 		F779ABBA219408AD0048EF28 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABB9219408AD0048EF28 /* FirstViewController.swift */; };
 		F779ABBC219408AD0048EF28 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABBB219408AD0048EF28 /* SecondViewController.swift */; };
 		F779ABBF219408AD0048EF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F779ABBD219408AD0048EF28 /* Main.storyboard */; };
 		F779ABC1219408AF0048EF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F779ABC0219408AF0048EF28 /* Assets.xcassets */; };
 		F779ABC4219408AF0048EF28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F779ABC2219408AF0048EF28 /* LaunchScreen.storyboard */; };
+		F779ABCC21940C7E0048EF28 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F779ABCB21940C7E0048EF28 /* Podfile */; };
+		F779ABD121941CD80048EF28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD021941CD80048EF28 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33CD55EA683E0E395DC4C875 /* Pods-TravelMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMaster/Pods-TravelMaster.debug.xcconfig"; sourceTree = "<group>"; };
+		56CC20A46CFA0F1222E20F61 /* libPods-TravelMaster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelMaster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A819437131F597FB18FE4E77 /* Pods-TravelMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMaster/Pods-TravelMaster.release.xcconfig"; sourceTree = "<group>"; };
 		F779ABB4219408AD0048EF28 /* TravelMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F779ABB7219408AD0048EF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F779ABB9219408AD0048EF28 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		F779ABC0219408AF0048EF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F779ABC3219408AF0048EF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F779ABC5219408AF0048EF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F779ABCB21940C7E0048EF28 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F779ABD021941CD80048EF28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8D4F491826367B4175EDAE /* libPods-TravelMaster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49D5D7522433218F8339FD4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56CC20A46CFA0F1222E20F61 /* libPods-TravelMaster.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6479E59897C9893CE411F6F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33CD55EA683E0E395DC4C875 /* Pods-TravelMaster.debug.xcconfig */,
+				A819437131F597FB18FE4E77 /* Pods-TravelMaster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F779ABAB219408AD0048EF28 = {
 			isa = PBXGroup;
 			children = (
+				F779ABCB21940C7E0048EF28 /* Podfile */,
 				F779ABB6219408AD0048EF28 /* TravelMaster */,
 				F779ABB5219408AD0048EF28 /* Products */,
+				6479E59897C9893CE411F6F9 /* Pods */,
+				49D5D7522433218F8339FD4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +85,7 @@
 		F779ABB6219408AD0048EF28 /* TravelMaster */ = {
 			isa = PBXGroup;
 			children = (
+				F779ABCF21941C270048EF28 /* Constanrt */,
 				F779ABB7219408AD0048EF28 /* AppDelegate.swift */,
 				F779ABB9219408AD0048EF28 /* FirstViewController.swift */,
 				F779ABBB219408AD0048EF28 /* SecondViewController.swift */,
@@ -67,6 +97,14 @@
 			path = TravelMaster;
 			sourceTree = "<group>";
 		};
+		F779ABCF21941C270048EF28 /* Constanrt */ = {
+			isa = PBXGroup;
+			children = (
+				F779ABD021941CD80048EF28 /* Constants.swift */,
+			);
+			path = Constanrt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F779ABC8219408AF0048EF28 /* Build configuration list for PBXNativeTarget "TravelMaster" */;
 			buildPhases = (
+				6A148945BE73D1046B017D7A /* [CP] Check Pods Manifest.lock */,
 				F779ABB0219408AD0048EF28 /* Sources */,
 				F779ABB1219408AD0048EF28 /* Frameworks */,
 				F779ABB2219408AD0048EF28 /* Resources */,
+				111D4EB69D6AC1B4D25F812E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,11 +167,61 @@
 			files = (
 				F779ABC4219408AF0048EF28 /* LaunchScreen.storyboard in Resources */,
 				F779ABC1219408AF0048EF28 /* Assets.xcassets in Resources */,
+				F779ABCC21940C7E0048EF28 /* Podfile in Resources */,
 				F779ABBF219408AD0048EF28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		111D4EB69D6AC1B4D25F812E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelMaster/Pods-TravelMaster-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelMaster/Pods-TravelMaster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A148945BE73D1046B017D7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelMaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F779ABB0219408AD0048EF28 /* Sources */ = {
@@ -141,6 +231,7 @@
 				F779ABBC219408AD0048EF28 /* SecondViewController.swift in Sources */,
 				F779ABB8219408AD0048EF28 /* AppDelegate.swift in Sources */,
 				F779ABBA219408AD0048EF28 /* FirstViewController.swift in Sources */,
+				F779ABD121941CD80048EF28 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +375,7 @@
 		};
 		F779ABC9219408AF0048EF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33CD55EA683E0E395DC4C875 /* Pods-TravelMaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +393,7 @@
 		};
 		F779ABCA219408AF0048EF28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A819437131F597FB18FE4E77 /* Pods-TravelMaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
