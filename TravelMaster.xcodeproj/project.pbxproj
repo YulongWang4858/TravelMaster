@@ -16,6 +16,8 @@
 		F779ABC4219408AF0048EF28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F779ABC2219408AF0048EF28 /* LaunchScreen.storyboard */; };
 		F779ABCC21940C7E0048EF28 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F779ABCB21940C7E0048EF28 /* Podfile */; };
 		F779ABD121941CD80048EF28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD021941CD80048EF28 /* Constants.swift */; };
+		F779ABD421944E660048EF28 /* GMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD321944E660048EF28 /* GMapHelper.swift */; };
+		F779ABD8219489F90048EF28 /* GMapWaypointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F779ABC5219408AF0048EF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F779ABCB21940C7E0048EF28 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F779ABD021941CD80048EF28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F779ABD321944E660048EF28 /* GMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapHelper.swift; sourceTree = "<group>"; };
+		F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapWaypointModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		F779ABB6219408AD0048EF28 /* TravelMaster */ = {
 			isa = PBXGroup;
 			children = (
+				F779ABD6219489D60048EF28 /* Model */,
+				F779ABD221944E120048EF28 /* GMap */,
 				F779ABCF21941C270048EF28 /* Constanrt */,
 				F779ABB7219408AD0048EF28 /* AppDelegate.swift */,
 				F779ABB9219408AD0048EF28 /* FirstViewController.swift */,
@@ -103,6 +109,22 @@
 				F779ABD021941CD80048EF28 /* Constants.swift */,
 			);
 			path = Constanrt;
+			sourceTree = "<group>";
+		};
+		F779ABD221944E120048EF28 /* GMap */ = {
+			isa = PBXGroup;
+			children = (
+				F779ABD321944E660048EF28 /* GMapHelper.swift */,
+			);
+			path = GMap;
+			sourceTree = "<group>";
+		};
+		F779ABD6219489D60048EF28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F779ABBC219408AD0048EF28 /* SecondViewController.swift in Sources */,
+				F779ABD421944E660048EF28 /* GMapHelper.swift in Sources */,
 				F779ABB8219408AD0048EF28 /* AppDelegate.swift in Sources */,
 				F779ABBA219408AD0048EF28 /* FirstViewController.swift in Sources */,
 				F779ABD121941CD80048EF28 /* Constants.swift in Sources */,
+				F779ABD8219489F90048EF28 /* GMapWaypointModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

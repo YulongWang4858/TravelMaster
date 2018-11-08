@@ -9,19 +9,18 @@
 import UIKit
 import GoogleMaps
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController
+{
+    // MARK : Fields and Const
+    private var _gmap_helper : GMapHelper = GMapHelper.GMapHelperInstance!;
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         // load GMap
-        GMSServices.provideAPIKey(Constants.GMAP_API_KEY);
-        
-        let camera = GMSCameraPosition.camera(withLatitude: 1.318056, longitude: 103.908629, zoom: 20);
-        let mapView = GMSMapView.map(withFrame:CGRect.zero, camera: camera);
+        let mapView = self._gmap_helper.GetDefaultGMapView();
         view = mapView;
     }
-
 }
 
