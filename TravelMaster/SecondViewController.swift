@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController
+{
+    // MARK : Fields and Const
+    private var _gmap_helper : GMapHelper = GMapHelper.GMapHelperInstance!;
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // load GMap
+        let mapView = self._gmap_helper.GetDefaultGMapView();
+        view = mapView;
     }
-
-
 }
 
