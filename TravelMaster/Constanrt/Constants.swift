@@ -17,4 +17,8 @@ struct Constants
     public static let PARC_ELEG_LAT : Double = 1.318056;
     public static let PARC_ELEG_LON : Double = 103.908629;
     public static let PARC_ELEG_ZOOM : Float = 20;
+    
+    // MARK : View Dimensions
+    public static let SMALL_UIBUTTON_SIDE_LENGTH = 40;
+    public static let SMALL_UIBUTTON_GAP_LENGTH = 25;
 }
