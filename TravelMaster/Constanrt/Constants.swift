@@ -19,6 +19,10 @@ struct Constants
     public static let PARC_ELEG_ZOOM : Float = 20;
     
     // MARK : View Dimensions
-    public static let SMALL_UIBUTTON_SIDE_LENGTH = 40;
-    public static let SMALL_UIBUTTON_GAP_LENGTH = 25;
+    public static let SMALL_UIBUTTON_SIDE_LENGTH : Int = 40;
+    public static let SMALL_UIBUTTON_GAP_LENGTH : Int = 25;
+    
+    // MARK : UI Control Tag
+    public static let ZOOM_UP_TAG : Int = 0;
+    public static let ZOOM_DOWN_TAG : Int = 1;
 }

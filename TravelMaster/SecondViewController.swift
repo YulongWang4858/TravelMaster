@@ -37,22 +37,32 @@ class SecondViewController: UIViewController
     }
     
     // MARK : Methods
-    func load_UI_components()
+    /* Initialize Dynamic UI Components */
+    private func load_UI_components()
     {
-        // buttons
+        // zoom up button
         let zoomUpButton = UIButton();
         zoomUpButton.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1);
         zoomUpButton.frame = CGRect(x: (_max_view_x - Constants.SMALL_UIBUTTON_GAP_LENGTH - Constants.SMALL_UIBUTTON_SIDE_LENGTH), y: (_max_view_y - 4 * Constants.SMALL_UIBUTTON_GAP_LENGTH - 2 * Constants.SMALL_UIBUTTON_SIDE_LENGTH), width: Constants.SMALL_UIBUTTON_SIDE_LENGTH, height: Constants.SMALL_UIBUTTON_SIDE_LENGTH);
         zoomUpButton.setTitle("+", for: .normal);
-        
+        zoomUpButton.tag = Constants.ZOOM_UP_TAG;
+        zoomUpButton.addTarget(self, action: #selector(zoom_control_clicked(sender:)), for: .touchUpInside);
         self.view.addSubview(zoomUpButton);
         
+        // zoom down button
         let zoomDownButton = UIButton();
         zoomDownButton.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1);
         zoomDownButton.frame = CGRect(x: (_max_view_x - Constants.SMALL_UIBUTTON_GAP_LENGTH - Constants.SMALL_UIBUTTON_SIDE_LENGTH), y: (_max_view_y - 2 * Constants.SMALL_UIBUTTON_GAP_LENGTH - 2 * Constants.SMALL_UIBUTTON_SIDE_LENGTH), width: Constants.SMALL_UIBUTTON_SIDE_LENGTH, height: Constants.SMALL_UIBUTTON_SIDE_LENGTH);
         zoomDownButton.setTitle("-", for: .normal);
-        
+        zoomDownButton.tag = Constants.ZOOM_DOWN_TAG;
+        zoomDownButton.addTarget(self, action: #selector(zoom_control_clicked(sender:)), for: .touchUpInside);
         self.view.addSubview(zoomDownButton);
+    }
+    
+    /* Controlling Zoom Actions + & - */
+    @objc private func zoom_control_clicked(sender : UIButton!)
+    {
+        self._gmap_helper.ZoomControl(withTag: sender.tag);
     }
 }
 
