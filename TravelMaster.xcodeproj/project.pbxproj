@@ -18,6 +18,7 @@
 		F779ABD121941CD80048EF28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD021941CD80048EF28 /* Constants.swift */; };
 		F779ABD421944E660048EF28 /* GMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD321944E660048EF28 /* GMapHelper.swift */; };
 		F779ABD8219489F90048EF28 /* GMapWaypointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */; };
+		F7D96E1D219B3C8400736CBD /* LocationMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D96E1C219B3C8400736CBD /* LocationMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F779ABD021941CD80048EF28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F779ABD321944E660048EF28 /* GMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapHelper.swift; sourceTree = "<group>"; };
 		F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapWaypointModel.swift; sourceTree = "<group>"; };
+		F7D96E1C219B3C8400736CBD /* LocationMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F779ABD321944E660048EF28 /* GMapHelper.swift */,
+				F7D96E1C219B3C8400736CBD /* LocationMarker.swift */,
 			);
 			path = GMap;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				F779ABB8219408AD0048EF28 /* AppDelegate.swift in Sources */,
 				F779ABBA219408AD0048EF28 /* FirstViewController.swift in Sources */,
 				F779ABD121941CD80048EF28 /* Constants.swift in Sources */,
+				F7D96E1D219B3C8400736CBD /* LocationMarker.swift in Sources */,
 				F779ABD8219489F90048EF28 /* GMapWaypointModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

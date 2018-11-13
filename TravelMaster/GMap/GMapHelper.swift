@@ -19,7 +19,7 @@ public class GMapHelper
     private var min_zoom_level : Float? = 0;
     
     // MARK: Properties
-    // singletone property
+    /* Singleton Property */
     public static var GMapHelperInstance : GMapHelper?
     {
         get
@@ -33,7 +33,7 @@ public class GMapHelper
     }
     
     /* Property in control of Zoom value and animation, with safety bounds */
-    public var CurrentZoomLevel : Float?
+    private var CurrentZoomLevel : Float?
     {
         get
         {
@@ -44,6 +44,8 @@ public class GMapHelper
             // change and animate
             let current_zoom = self.mapView?.camera.zoom;
             
+            
+            // checks on safety bounds
             if (newZoomLevel!.isLess(than: current_zoom!))
             {
                 self.mapView?.animate(toZoom: (current_zoom! - 2).isLess(than: min_zoom_level!) ? min_zoom_level! : newZoomLevel! );
