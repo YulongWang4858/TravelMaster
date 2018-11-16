@@ -18,6 +18,7 @@
 		F779ABD121941CD80048EF28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD021941CD80048EF28 /* Constants.swift */; };
 		F779ABD421944E660048EF28 /* GMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD321944E660048EF28 /* GMapHelper.swift */; };
 		F779ABD8219489F90048EF28 /* GMapWaypointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */; };
+		F7A17547219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A17546219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift */; };
 		F7D96E1D219B3C8400736CBD /* LocationMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D96E1C219B3C8400736CBD /* LocationMarker.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		F779ABD021941CD80048EF28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F779ABD321944E660048EF28 /* GMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapHelper.swift; sourceTree = "<group>"; };
 		F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapWaypointModel.swift; sourceTree = "<group>"; };
+		F7A17546219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMarkerCollectionHelper.swift; sourceTree = "<group>"; };
 		F7D96E1C219B3C8400736CBD /* LocationMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 		F779ABB6219408AD0048EF28 /* TravelMaster */ = {
 			isa = PBXGroup;
 			children = (
+				F7A17545219E666000B19E90 /* Helper */,
 				F779ABD6219489D60048EF28 /* Model */,
 				F779ABD221944E120048EF28 /* GMap */,
 				F779ABCF21941C270048EF28 /* Constanrt */,
@@ -128,6 +131,14 @@
 				F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F7A17545219E666000B19E90 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F7A17546219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 				F779ABBA219408AD0048EF28 /* FirstViewController.swift in Sources */,
 				F779ABD121941CD80048EF28 /* Constants.swift in Sources */,
 				F7D96E1D219B3C8400736CBD /* LocationMarker.swift in Sources */,
+				F7A17547219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift in Sources */,
 				F779ABD8219489F90048EF28 /* GMapWaypointModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

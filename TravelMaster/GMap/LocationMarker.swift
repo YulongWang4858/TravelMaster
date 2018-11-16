@@ -47,8 +47,6 @@ public class LocationMarker
     // MARK : Constructor
     public init()
     {
-        self._gmarker = GMSMarker();
-        
         self._gmarker = GMSMarker.init(position: self._map_position_2d);
     }
     
@@ -73,6 +71,7 @@ public class LocationMarker
     {
         return self._marker_rID.elementsEqual(another._marker_rID);
     }
+    
     
     // MARK : Methods
 }
