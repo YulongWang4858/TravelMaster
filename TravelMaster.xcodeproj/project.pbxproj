@@ -20,6 +20,7 @@
 		F779ABD8219489F90048EF28 /* GMapWaypointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */; };
 		F7A17547219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A17546219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift */; };
 		F7D96E1D219B3C8400736CBD /* LocationMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D96E1C219B3C8400736CBD /* LocationMarker.swift */; };
+		F7D9BCF821A06F31009AF5C0 /* HashableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D9BCF721A06F31009AF5C0 /* HashableClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F779ABD7219489F90048EF28 /* GMapWaypointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapWaypointModel.swift; sourceTree = "<group>"; };
 		F7A17546219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMarkerCollectionHelper.swift; sourceTree = "<group>"; };
 		F7D96E1C219B3C8400736CBD /* LocationMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMarker.swift; sourceTree = "<group>"; };
+		F7D9BCF721A06F31009AF5C0 /* HashableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		F779ABB6219408AD0048EF28 /* TravelMaster */ = {
 			isa = PBXGroup;
 			children = (
+				F7D9BCF621A06F13009AF5C0 /* Protocol */,
 				F7A17545219E666000B19E90 /* Helper */,
 				F779ABD6219489D60048EF28 /* Model */,
 				F779ABD221944E120048EF28 /* GMap */,
@@ -139,6 +142,14 @@
 				F7A17546219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		F7D9BCF621A06F13009AF5C0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F7D9BCF721A06F31009AF5C0 /* HashableClass.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				F779ABD121941CD80048EF28 /* Constants.swift in Sources */,
 				F7D96E1D219B3C8400736CBD /* LocationMarker.swift in Sources */,
 				F7A17547219E66BE00B19E90 /* LocationMarkerCollectionHelper.swift in Sources */,
+				F7D9BCF821A06F31009AF5C0 /* HashableClass.swift in Sources */,
 				F779ABD8219489F90048EF28 /* GMapWaypointModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

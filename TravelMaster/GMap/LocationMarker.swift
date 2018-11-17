@@ -9,8 +9,13 @@
 import Foundation
 import GoogleMaps
 
-public class LocationMarker
+public class LocationMarker : HashableClass
 {
+    // MARK : Protocol Implementation
+    public static func == (lhs: LocationMarker, rhs: LocationMarker) -> Bool {
+        return lhs._marker_rID.elementsEqual(rhs._marker_rID);
+    }
+    
     // MARK : Fields and Const
     private var _is_marker_visible : Bool = true;
     private var _marker_index : Int? = nil;
@@ -43,9 +48,16 @@ public class LocationMarker
         }
     }
     
+    public var  MarkerID : String
+    {
+        get
+        {
+            return self._marker_rID;
+        }
+    }
     
     // MARK : Constructor
-    public init()
+    public override init()
     {
         self._gmarker = GMSMarker.init(position: self._map_position_2d);
     }
